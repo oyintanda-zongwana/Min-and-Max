@@ -1,6 +1,6 @@
 let numbers = [];
 
-function addNumber() {
+function addNumber() { //retive a number, add to array, clear the input box, update html element
     let numberInput = document.getElementById('numberInput').value;
     if (numberInput !== "") {
         numbers.push(Number(numberInput));
@@ -8,7 +8,7 @@ function addNumber() {
         document.getElementById('array').innerHTML = "<p>The array of numbers is: " + numbers.join(", ") + "</p>";
     }
 }
-
+//so that they enter numbers
 function findMinMax() {
     if (numbers.length === 0) {
         document.getElementById('result').innerHTML = "<p>Please add some numbers first.</p>";
